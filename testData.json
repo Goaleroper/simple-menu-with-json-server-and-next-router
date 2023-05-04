@@ -1,0 +1,9 @@
+{
+  "name": ["TestMenu"],
+  "path": [
+    { "id": 4, "title": "path", "priority": 4 },
+    { "id": 1, "title": "path1", "priority": 1 },
+    { "id": 3, "title": "path3", "priority": 3 },
+    { "id": 2, "title": "path2", "priority": 2 }
+  ]
+}
