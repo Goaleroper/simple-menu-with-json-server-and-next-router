@@ -17,5 +17,10 @@
   },
   "devDependencies": {
     "husky": "^9.0.11"
+  },
+  "husky": {
+  "hooks": {
+    "post-merge": "./.githooks/post-merge"
   }
+}
 }

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Check if the merge was with the main branch
+if [ "$1" = "refs/heads/main" ] || [ "$1" = "refs/heads/master" ]; then
+  # Increment the version (you can adjust this logic as needed)
+  npm version patch --no-git-tag-version
+
+  # Update the Git tag
+  git tag -a "$(node -p 'require("./package.json").version')" -m "Version $(node -p 'require("./package.json").version')"
+fi
