@@ -9,14 +9,14 @@ p {
 }
 
 .menu {
-  display: grid;
+  display: flex;
   flex-direction: column;
   padding-top: 10px;
   align-items: center;
   width: 15%;
   height: 100vh;
   background-color: rgb(3, 9, 88);
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 0px;
   border-top-left-radius: 10px;
