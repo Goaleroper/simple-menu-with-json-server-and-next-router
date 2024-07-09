@@ -10,7 +10,7 @@ on:
     branches:
       - main
 jobs:
-    if: github.event.pull_request.merged == true
+    # if: github.event.pull_request.merged == true
 
   bump-package-version:
     runs-on: ubuntu-latest
