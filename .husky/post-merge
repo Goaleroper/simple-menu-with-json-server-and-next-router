@@ -1,29 +1,29 @@
-#!/usr/bin/env sh
+# #!/usr/bin/env sh
 
-cd "$(dirname "$0")"
-# current_branch=$(git rev-parse --abbrev-ref HEAD)
-# if [ -z "$VERSION_BUMP_TYPE" ]; then
-#   echo "No version bump type provided. Push process is done without Bumping and Tgas"
-#   exit 0
+# cd "$(dirname "$0")"
+# # current_branch=$(git rev-parse --abbrev-ref HEAD)
+# # if [ -z "$VERSION_BUMP_TYPE" ]; then
+# #   echo "No version bump type provided. Push process is done without Bumping and Tgas"
+# #   exit 0
+# # fi
+
+# # HOOK_FLAG=".pre-push-flag"
+
+
+# # if [ ! -f "$HOOK_FLAG" ]; then
+
+# # touch "$HOOK_FLAG"
+# # echo "Bumping version with type: $VERSION_BUMP_TYPE"
+
+# # Bumping version 
+# new_version=$(npm version major)
+
+# if [ $? -ne 0 ]; then
+#   echo "Failed to bump version. Aborting."
+#   exit 1
 # fi
 
-# HOOK_FLAG=".pre-push-flag"
+# # git push --tags
 
-
-# if [ ! -f "$HOOK_FLAG" ]; then
-
-# touch "$HOOK_FLAG"
-# echo "Bumping version with type: $VERSION_BUMP_TYPE"
-
-# Bumping version 
-new_version=$(npm version major)
-
-if [ $? -ne 0 ]; then
-  echo "Failed to bump version. Aborting."
-  exit 1
-fi
-
-# git push --tags
-
-# rm "$HOOK_FLAG"
-# fi
+# # rm "$HOOK_FLAG"
+# # fi
