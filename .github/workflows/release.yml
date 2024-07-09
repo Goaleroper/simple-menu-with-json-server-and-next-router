@@ -22,8 +22,8 @@ jobs:
           # Increment the version in package.json
           npm version patch --no-git-tag-version
           # Commit the updated package.json
-          git config user.name "Ehsan.Aj"
-          git config user.email "eng.ahanj@gmail.com"
+          git config user.name "Goaleroper"
+          git config user.email "goleroper@gmail.com"
           git add package.json
           git commit -m "Bump package version"
           # Push the changes back to the repo
